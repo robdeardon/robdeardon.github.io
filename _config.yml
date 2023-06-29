@@ -17,7 +17,7 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Home", icon: home}
-  - {file: "https://robdeardon.github.io/deardonpublications.pdf", title: "Publications"}
+  - {url: "https://robdeardon.github.io/deardonpublications.pdf", title: "Publications"}
   - {file: "index.html"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
