@@ -17,8 +17,8 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Home", icon: home}
-  - {url: "https://robdeardon.github.io/deardonpublications.pdf", title: "Publications"}
-  - {file: "index.html"}
+  - {url: "https://robdeardon.github.io/Deardon_Publications.pdf", title: "Publications"}
+  - {url: "https://robdeardon.github.io/Deardon_ResearchGroup.pdf", title: "Research Group"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:rob.deardon@ucalgary.ca"}
