@@ -16,7 +16,7 @@ minimal: false             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "Home", icon: home}
+  - {file: "index.md" title: "Home", icon: home}
   - {url: "https://robdeardon.github.io/Deardon_Publications.pdf", title: "Publications"}
   - {url: "https://robdeardon.github.io/Deardon_ResearchGroup.pdf", title: "Research Group"}
 
