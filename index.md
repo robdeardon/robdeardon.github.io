@@ -9,3 +9,5 @@ Much of my recent work has been in the area of infectious disease modelling, but
 
 
 ![HeadShot](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RobHeadshot.png)
+
+[![Foo](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/header3.png)](https://obrieniph.ucalgary.ca/groups/university-calgary-biostatistics-centre)
