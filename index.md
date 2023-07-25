@@ -24,3 +24,6 @@ I am also the Graduate Coordinator of the interdisciplinary Biostatistics MSc-th
 
 [![Foo](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.pdf)](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.pdf)
 
+[PDF](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.pdf)
+
+[Markdown](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.Rmd)
