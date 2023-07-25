@@ -23,5 +23,4 @@ I am also the Graduate Coordinator of the interdisciplinary Biostatistics MSc-th
 # R-Nimble Code - SWB/CIR Talk
 
 
-[PDF](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.pdf)      
-[Markdown](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown SIR.Rmd)
+[PDF](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.pdf)         [Markdown](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RMarkdown-SIR.Rmd)
