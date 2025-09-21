@@ -7,6 +7,7 @@ I am a Professor of Biostatistics with a joint position in the Faculty of Veteri
 
 Much of my recent work has been in the area of infectious disease modelling, but I am also interested in Bayesian & computational statistics, experimental design, disease surveillance methods, spatio-temporal modelling, statistical learning and statistical modelling in general. 
 
+I am especially interested in behavioural-change epidemic models (BCEMs) which allow for the fact that populations tend to react to disease outbreak severity in ways that mitigate transmission, as well as individual-level models (ILMs) that account for spatial or other types of hetereogeneity in the population.
 
 ![HeadShot](https://raw.githubusercontent.com/robdeardon/robdeardon.github.io/master/RobHeadshot.png)
 
