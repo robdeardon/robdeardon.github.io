@@ -3,8 +3,6 @@ layout: default
 title: "Home"
 ---
 
-Hello
-
 {% if site.show_excerpts %}
   {% for post in site.posts %}
     <article>
@@ -17,4 +15,5 @@ Hello
   {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
   {{ source | split: "---" | last }}
 {% endif %}
+
 
