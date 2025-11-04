@@ -7,7 +7,7 @@ title: "Home"
   {% for post in site.posts %}
     <article>
       {% include meta.html post=post %}
-      {{ post.excerpt }}
+      {{ post.content }}
       <footer class="button"><a href="{{ post.url | relative_url }}">read more</a></footer>
     </article>
   {% endfor %}
@@ -15,5 +15,6 @@ title: "Home"
   {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
   {{ source | split: "---" | last }}
 {% endif %}
+
 
 
