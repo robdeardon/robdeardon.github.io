@@ -20,6 +20,7 @@ show_minimal: false             # remove all clutter
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {url: Deardon_Publications.pdf, title: "Publications", sidebaricon: home}
   - {url: Deardon_Presentations.pdf, title: "Presentations", sidebaricon: home}
+  - {url: Deardon_ResearchGroup.pdf, title: "Research Group", sidebaricon: home}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
