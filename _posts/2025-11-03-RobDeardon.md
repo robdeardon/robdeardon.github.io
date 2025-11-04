@@ -9,7 +9,7 @@ Much of my recent work has focused on infectious disease modelling, especially i
 
 In addition, my interests also span Bayesian and computational statistics, disease surveillance methods, spatio-temporal modelling, statistical learning, and experimental design. 
 
-I typically lead a research group of ten trainees or more and have published more than 90 papers in peer-reviewed journals. I have served as an Associate Editor for several journals, including Biometrics, the Journal of the Royal Statistical Society (Series C), and the Canadian Journal of Statistics.](https://robdeardon.github.io)
+I typically lead a research group of ten trainees or more and have published more than 90 papers in peer-reviewed journals. I have served as an Associate Editor for several journals, including Biometrics, the Journal of the Royal Statistical Society (Series C), and the Canadian Journal of Statistics.
 
 I am also currently serving as President of the Statistical Society of Canada.
 
