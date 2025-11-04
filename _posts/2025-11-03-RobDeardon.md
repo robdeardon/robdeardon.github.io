@@ -9,4 +9,4 @@ I currently lead a research group of around ten trainees and have published more
 
 I am also currently serving as President of the Statistical Society of Canada.
 
-![Image](/Rob Headshot.png)
+![Image](/RobHeadshot2.png)
