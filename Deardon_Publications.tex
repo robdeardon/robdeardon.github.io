@@ -1,0 +1,1124 @@
+%1b is first finished draft - but is too long by 1 page.
+%1c is shortened by removing reference to software & other stuff...
+
+
+
+
+%  This document must be used with LaTeX 2e!!!
+
+\documentclass[11pt]{article} 
+\usepackage{amsmath,epsfig,epsf,psfrag,natbib,verbatim,longtable, etaremune}
+
+
+ 
+%  put your commands here
+
+\def\be{{\ensuremath\mathbf{e}}}
+\def\bx{{\ensuremath\mathbf{x}}}
+\def\bthet{{\ensuremath\boldsymbol{\theta}}}
+\newcommand{\VS}{V\&S}
+\newcommand{\tr}{\mbox{tr}}
+
+%\setlength{\parindent}{0cm}
+
+% Subfigure inclusion
+
+\usepackage[center]{subfigure}
+\renewcommand{\thesubfigure}{}
+\makeatletter
+ \renewcommand{\@thesubfigure}{}
+ \renewcommand{\p@subfigure}{\thefigure}
+\makeatother
+
+
+\renewcommand{\subfigcapskip}{-10pt}
+\renewcommand{\subfigtopskip}{5pt}
+\renewcommand{\subfigbottomskip}{10pt}
+
+
+
+%% Maths Definitions
+\newcommand{\qed}{\hfill{$\square$}}
+\newcommand{\bfzero}{\hbox{\boldmath$0$}}
+\newcommand{\bfalpha}{\hbox{\boldmath$\alpha$}}
+\newcommand{\bfkappa}{\hbox{\boldmath$\kappa$}}
+\newcommand{\bfnu}{\hbox{\boldmath$\nu$}}
+\newcommand{\bfphi}{\hbox{\boldmath$\phi$}}
+\newcommand{\bfPhi}{\hbox{\boldmath$\Phi$}}
+\newcommand{\bfpsi}{\hbox{\boldmath$\psi$}}
+\newcommand{\bflambda}{\hbox{\boldmath$\lambda$}}
+\newcommand{\bfTheta}{\hbox{\boldmath$\Theta$}}
+\newcommand{\bftheta}{\hbox{\boldmath$\theta$}}
+\newcommand{\bfepsilon}{\hbox{\boldmath$\epsilon$}}
+\newcommand{\bfbeta}{\hbox{\boldmath$\beta$}}
+\newcommand{\bfeta}{\hbox{\boldmath$\eta$}}
+\newcommand{\bfpi}{\hbox{\boldmath$\pi$}}
+\newcommand{\bfprod}{\hbox{\boldmath$\prod$}}
+\newcommand{\bfSigma}{\hbox{\boldmath$\Sigma$}}
+\newcommand{\bfsigma}{\hbox{\boldmath$\sigma$}}
+\newcommand{\bfmu}{\hbox{\boldmath$\mu$}}
+\newcommand{\bfa}{\hbox{\boldmath$a$}}
+\newcommand{\bfA}{\hbox{\boldmath$A$}}
+\newcommand{\bfb}{\hbox{\boldmath$b$}}
+\newcommand{\bfB}{\hbox{\boldmath$B$}}
+\newcommand{\bfc}{\hbox{\boldmath$c$}}
+\newcommand{\bfC}{\hbox{\boldmath$C$}}
+\newcommand{\bfd}{\hbox{\boldmath$d$}}
+\newcommand{\bfD}{\hbox{\boldmath$D$}}
+\newcommand{\bfe}{\hbox{\boldmath$e$}}
+\newcommand{\bfE}{\hbox{\boldmath$E$}}
+\newcommand{\bff}{\hbox{\boldmath$f$}}
+\newcommand{\bfF}{\hbox{\boldmath$F$}}
+\newcommand{\bfg}{\hbox{\boldmath$g$}}
+\newcommand{\bfG}{\hbox{\boldmath$G$}}
+\newcommand{\bfI}{\hbox{\boldmath$I$}}
+\newcommand{\bfl}{\hbox{\boldmath$l$}}
+\newcommand{\bfJ}{\hbox{\boldmath$J$}}
+\newcommand{\bfk}{\hbox{\boldmath$k$}}
+\newcommand{\bfK}{\hbox{\boldmath$K$}}
+\newcommand{\bfm}{\hbox{\boldmath$m$}}
+\newcommand{\bfM}{\hbox{\boldmath$M$}}
+\newcommand{\bfn}{\hbox{\boldmath$n$}}
+\newcommand{\bfN}{\hbox{\boldmath$N$}}
+\newcommand{\bfO}{\hbox{\boldmath$O$}}
+\newcommand{\bfp}{\hbox{\boldmath$p$}}
+\newcommand{\bfP}{\hbox{\boldmath$P$}}
+\newcommand{\bfr}{\hbox{\boldmath$r$}}
+\newcommand{\bfR}{\hbox{\boldmath$R$}}
+\newcommand{\bfS}{\hbox{\boldmath$S$}}
+\newcommand{\bfs}{\hbox{\boldmath$s$}}
+\newcommand{\bft}{\hbox{\boldmath$t$}}
+\newcommand{\bfT}{\hbox{\boldmath$T$}}
+\newcommand{\bfu}{\hbox{\boldmath$u$}}
+\newcommand{\bfU}{\hbox{\boldmath$U$}}
+\newcommand{\bfv}{\hbox{\boldmath$v$}}
+\newcommand{\bfV}{\hbox{\boldmath$V$}}
+\newcommand{\bfw}{\hbox{\boldmath$w$}}
+\newcommand{\bfW}{\hbox{\boldmath$W$}}
+\newcommand{\bfx}{\hbox{\boldmath$x$}}
+\newcommand{\bfX}{\hbox{\boldmath$X$}}
+\newcommand{\bfy}{\hbox{\boldmath$y$}}
+\newcommand{\bfY}{\hbox{\boldmath$Y$}}
+\newcommand{\bfz}{\hbox{\boldmath$z$}}
+\newcommand{\bfZ}{\hbox{\boldmath$Z$}}
+
+
+
+%\setlength{\rightskip}{0pt plus 1fil}
+
+
+
+        \pagestyle{myheadings}
+
+
+
+\setlength{\voffset}{-0.7truecm}
+\setlength{\topmargin}{0.0cm}
+\setlength{\headheight}{12pt}
+\setlength{\headsep}{15pt}
+\setlength{\textheight}{23.3truecm}
+\setlength{\textwidth}{18.0cm}
+\setlength{\oddsidemargin}{-0.8cm}
+\setlength{\evensidemargin}{-0.8cm}
+
+\markboth{Dr Rob Deardon}{Dr Rob Deardon}
+\markright{Dr Rob Deardon}
+
+
+\renewcommand{\baselinestretch}{0.90}
+
+
+ \begin{document}
+
+
+
+%\setlength{\textwidth}{26cm}
+%\setlength{\textheight}{625pt} 
+%\setlength{\baselineskip}{14pt}
+%\setlength{\oddsidemargin}{0.0truecm}
+%\setlength{\evensidemargin}{0.0truecm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+\begin{itemize}
+\item[]
+
+\hrulefill{}
+\end{itemize}
+
+\begin {etaremune}
+
+
+\item[]
+\begin{center}
+ {\bf {\large Publication List}}
+ 
+ 
+  {\bf {\em (Research Group Members Shown in Italics)}}
+\end{center}
+
+\hrulefill{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+  \begin {comment}
+~
+~
+
+
+
+\item[]
+
+\begin{center}
+ {\bf {In Preparation}}
+\end{center}
+
+
+
+
+\item {\bf {\em S. Hossein}} {\em et al. }
+
+\item {\bf {\em Y. Zhang}} {\em et al. }  Model averaging and selection for behavioural change  spatial epidemic models
+
+\item {\bf {\em J. Pavani}} {\em et al. }  Mixture BCEMs
+
+\item {\bf {\em D. Douwes-Schultz}} {\em et al. }  Individual level hidden Markov epidemic models II
+ 
+  \item {\bf {\em M. Roy}} {\em et al. } 
+  
+\item Hornbeck {\em et al. } Excess Deaths
+
+  \item {\bf {\em M. Haq}} {\em et al. } 
+
+  \item {\bf {\em L. G. Salazar}} {\em et al. } 
+
+  \item {\bf {\em L. G. Salazar}} {\em et al. } 
+
+
+~
+\hrulefill{}
+
+
+
+
+\item {\bf {\em D. Douwes-Schultz}} {\em et al. }  Individual level hidden Markov epidemic models I
+
+\item {\bf {\em R. Li}} {\em et al. } Interventions to control the transmission  of Methicillin-resistant $Staphylococcus$ $aureus$ (MRSA) within hospitals 
+
+
+\item M. Biesheuvel, {\bf {\em C.  Ward}} {\em et al. }  Within-herd transmission of {\it Mycoplasma bovis} infection allowing for mis-measured infection status
+
+ \item {\bf {\em M. Ward}}, {\bf R. Deardon} \&  L. Deeth  ``Epidemic models with a time-varying behaviour change effect''
+
+
+\item {\bf {\em M. Ward}} {\em et al. }  ``A comparison of behaviour-related data sources in data-driven COVID-19 transmission models''
+
+\item {\bf {\em J. MacLean}}  \& Deardon ``Behavioural change in measles and influenza outbreaks''
+
+
+~
+ \hrulefill{}
+
+
+
+
+
+  \end{comment}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+~
+~
+
+\item[]
+
+\begin{center}
+ {\bf {Submitted Articles}}
+\end{center}
+
+
+
+
+
+\item {\bf {\em C. Ward}}, {\bf R. Deardon} \& A. Schmidt  ``Estimating the relative importance of multiple data sources informing behavioral change in the presence of data uncertainty during the COVID-19 pandemic'' submitted to {\it Biometrics}. https://arxiv.org/abs/2503.00982
+
+ \item {\bf {\em Y. Zhang}}, {\bf R. Deardon} \&  L. Deeth  ``Behavioural change model choice in spatial epidemic models'' submitted to {\it Bayesian Analysis}.
+
+\item  {\bf {\em Y. Mao}}, {\bf R. Deardon} \&  L. Deeth ``Memory mechanisms  for behavioural change in Bayesian individual level spatial  epidemic models''  submitted to {\it Infectious Disease Modelling}
+
+
+ \item {\bf {\em Y. Zhang}}, {\bf R. Deardon} \&  L. Deeth  ``Composite method for fast computation of individual level spatial epidemic models'' submitted to {\it Spatial Statistics} (revision requested).
+
+
+\item {\bf {\em J. Peitsch}}, G. Pokharel  \& {\bf R. Deardon}  ``Directionally-dependent spatial epidemic models''  submitted to {\it Spatial Statistics}  (revision requested).
+
+
+
+\item  V. Callier, {\bf R. Deardon}  \& C. Viboud ``Spatio-temporal spread of COVID-19 over three waves in the continental United States'' submitted to {\it Proceedings of the Royal Society B} (revision requested).
+
+ 
+
+
+
+
+\item {\bf {\em M. Mahsin}}, W. Almutiry \& {\bf R. Deardon} ``Spatial modeling of infectious disease transmission using continuous time geographically-dependent individual-level models'' submitted to {\it Statistics in Medicine} (revision requested).
+
+\item {\bf {\em J. MacLean}}  \& {\bf R. Deardon} ``Behavioural change in Canadian disease outbreaks'' submitted to the {\it Canadian Journal of Statistics}.
+
+
+
+ \item {\bf {\em R. Li}}, {\bf R. Deardon}, N. Li, J. Conly \& J. Leal  ``Bayesian compartmental modelling of the transmission dynamics of methicillin-resistant {\it Staphylococcus aureus} (MRSA) within hospitals in Edmonton, Canada'' submitted to the {\it Canadian Journal of Statistics}.
+
+\item {\bf {\em Kamso}} {\em et al.} ``A semi-automated approach facilitated the assessment of the certainty of evidence for direct comparisons in network meta-analyses'' submitted to the {\it Journal of Clinical Epidemiology}. http://ssrn.com/abstract=5205661  (revision requested).
+
+
+\item {\bf {\em Kamso}} {\em et al.} ``A semi-automated approach facilitated the assessment of the certainty of evidence for indirect and mixed comparisons in network meta-analyses'' submitted to the {\it Journal of Clinical Epidemiology}. http://ssrn.com/abstract=5205660  (revision requested).
+
+
+
+
+\item L. G. Salazar, H. McKenzie, {\bf R. Deardon}, K. Pepin, R. Brook, J. Bahamon, C. Neva \& M. Pruvot ``Interaction risk between wild pigs and livestock: implications for infectious disease transmission in Alberta, Canada'' submitted to {\it Preventive Veterinary Medicine}.
+
+
+\item R. Tyson, B. Baumgaertner, J. Heffernan, B. Nasri, A. Aghaeeyan, J. Arino, C. Bauch, B. Beckage, J. Bélair, D. Cardenas, M. Caron-Diotte, M. Cojocaru, D. Coombs, {\bf  R. Deardon}, M. Delehanty, E. Foxall, L. French Bourgeois, T. Garstka, P. (C.) Greenwood, L. Gross, E. Lacourse, F. Laliberté, H. Martin, L. McConnell-Soong, I. Moyles, M. Pelletier-Dumas, L. Pujo-Menjouet, M. M. Rahman, G. Ranson, C. Saad-Roy, D. Sarathchandra, E. Schwartz, C. Tovissode, M. (B.) Varughese, {\bf {\em M. Ward}}, D. Woodman, R. de la Sablonnière, G. Adu-Boahen, F. Agusto, B. Ashby, M. Baky Haskuee, A. Bizyaeva, L. Childs, H. K. Das, R. Dogra, K. Garain, J. Glasser, A. Greer, B. Jafari, K. Lacasse, S. Lenhart, J. Li, S. Machado-Marques, M. Martignoni, H. J. B. Njagarah, C. O’Connor, M. Ordorica Arango, M. Papagelis, P. Ramazi, K. Reynolds, G. Rost, S. Sadhu, C. Sims, S. Smith?, R. Spiteri, J. Stockdale, J. Velasco-Hernandez, J. Watmough, W. A. Woldegerima, S. Yanushkevich, E. Yedomonhan \&  H. Zhu  ``Why Behaviour Matters, How it Manifests, and What it Means for Disease-Behaviour Modelling of Infectious Diseases.''
+
+
+% \item {\bf {\em M. Pasha}}, {\bf R. Deardon} \& A. Rahim  ``Multi-response and multi-cause process monitoring by applying proportional hazards models in the optimal design of $T ^ 2$ control charts'' submitted to  {\it Computers \& Industrial Engineering}.
+
+
+% \item {\bf {\em M. Pasha}}, {\bf R. Deardon} \& A. Rahim  ``Multi-response process monitoring with T2 control charts under multiple assignable causes'' submitted to {\it Quality Technology and Quantitative Management}.
+
+
+
+ 
+
+
+%~
+
+
+\hrulefill{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+
+\begin{center}
+ {\bf  Conditionally Accepted Articles}
+
+ 
+\end{center}
+
+ 
+
+
+
+
+~
+\hrulefill{}
+
+
+
+
+\end{comment}
+
+
+
+\begin{center}
+{\bf {Accepted/In Press}}
+\end{center}
+
+
+
+ \item H. Qureshi, T. Hughes, E. Franco, K. Fiest, J. Gratrix, P. Smyczek, R. Read, A. Afzal, {\bf R. Deardon}, A. Kassam \& M. Fidler-Benaoudia  ``Risk of cancer among individuals with a history of bacterial sexually transmitted infections: a population-based study in Alberta, Canada'' to appear in {\it International Journal of Cancer}.
+
+
+\item M. Lewis, P. Brown, C. Colijn, L. Cowen, C. Cotton, T. Day, {\bf R. Deardon}, D. Earn, D. Haskell, J. Hefferman, P. Leighton, K. Murty, S. Otto, E. Rafferty, C. Hughes Tuohy, J. Wu \& H. Zhu ``Charting a future for emerging infectious disease modelling in Canada''  to appear in {\it Lasting Disruption: Economic and Social Impacts of COVID-19 in Canada}, McGill-Queen's University Press.  \\ http://hdl.handle.net/1828/15042.
+
+%\hrulefill{}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\hrulefill{}
+
+\begin{center}
+ {\bf Published Articles}
+\end{center}
+
+
+ \item {\bf {\em M. Ward}}, {\bf R. Deardon} \& L. Deeth (2025) ``A framework for incorporating behavioural change into individual-level spatial epidemic models''  in the {\it Canadian Journal of Statistics}, 53(1), e11828.   https://doi.org/10.1002/cjs.11828
+
+ \item {\bf {\em T. Akter}} \&  {\bf R. Deardon} (2025)   ``Conditional logistic individual-level models of spatial infectious disease dynamics''  in   {\it Infectious Disease Modelling}, 10(1), 268-286. \\
+https://doi.org/10.1016/j.idm.2024.10.008
+
+\item {\bf {\em C. Rahul}} \& {\bf R. Deardon} (2025)   ``Behavioural change piecewise constant spatial epidemic models''  in   {\it Infectious Disease Modelling}, 10(1), 302-324. https://doi.org/10.1016/j.idm.2024.10.006
+
+  \item {\bf {\em T. Akter}} \&  {\bf R. Deardon} ``Variable screening methods in conditional logistic individual level models of disease spread''  in   {\it Spatial \& Spatiotemporal Epidemiology}, 54, 100742. \\ https://doi.org/10.1016/j.sste.2025.100742
+
+
+\hrulefill{}
+
+
+
+\item {\bf {\em C. Rahul}} \& {\bf R. Deardon} (2024)  ``Individual-level models of disease transmission incorporating non-parametric spatial risk''  in  {\it Spatial \& Spatiotemporal Epidemiology}, 50, 100664. \\ https://doi.org/10.1016/j.sste.2024.100664
+ 
+
+\item {\bf {\em E. Hodzic-Santor}} \& {\bf R. Deardon}  (2024) ``Edge effects in spatial infectious disease models''   in  {\it Spatial \& Spatiotemporal Epidemiology}, 50, 100673. https://doi.org/10.1016/j.sste.2024.100673
+  
+\item M. Biesheuvel, {\bf {\em C.  Ward}}, P. Penterman, E. van Engelen, G.  Schaik, {\bf R. Deardon} \&  H. Barkema (2024)  ``Within-herd transmission of {\it Mycoplasma bovis} infection in 20 Dutch dairy herds''   in {\it Journal of Dairy Science}, 107(1), 503-516.  https://doi.org/10.3168/jds.2023-23407
+
+
+
+
+\hrulefill{}
+
+
+\item {\bf {\em C. Ward}},  {\bf R. Deardon} \& A. Schmidt (2023) ``Bayesian modelling of dynamic behavioural change during an epidemic''   {\it Infectious Disease Modelling}, 8(4), 947-963. https://doi.org/10.1016/j.idm.2023.08.002
+
+\item {\bf {\em L. Amiri}}, M. Torabi \&  {\bf R. Deardon}  (2023)  ``Spatial modelling of infectious diseases with covariate measurement error''    in  {\it Journal of the Royal Statistical Society: Series C},  73(2), 460-477. \\ https://doi.org/10.1093/jrsssc/qlad104
+
+\item {\bf {\em L. Amiri}}, M. Torabi \&  {\bf R. Deardon} (2023)  ``Analyzing COVID-19 data in the Canadian Province of Manitoba: A new approach''  in {\it Spatial Statistics}, 55:100729. doi: 10.1016/j.spasta.2023.100729. 
+
+
+
+ \item {\bf {\em T. Akter}} \&  {\bf R. Deardon} (2023) ``Comparison of variable screening methods in infectious disease transmission models``  in   {\it Spatial and Spatiotemporal Epidemiology}, 47, 100622.
+
+\item {\bf M. {\em Kamso}}, J. Pardo, S. Whittle,  R. Buchbinder, G. Wells, V. Glennon, P. Tugwell, {\bf  R. Deardon}, T. Sajobi, G. Tomlinson, J. Elliot, S. Kelly \& G. Hazlewood (2023). ``Crowdsourcing and automation facilitated the identification and classification of randomized controlled trials in a living review'  in {\it Journal of Clinical Epidemiology}, 164, 1-8. https://doi.org/10.1016/j.jclinepi.2023.10.007
+
+\item {\bf {\em M. Pasha}}, {\bf R. Deardon} \& A. Rahim (2023) ``A study on inspection schemes in optimal design of control charts for deteriorating processes''  in {\it Quality and Reliability Engineering International}, 39(3),  732-751.  https://doi.org/10.1002/qre.3253
+
+\hrulefill{}
+
+
+\item  {\bf {\em M. Mahsin}},  {\bf R. Deardon}  \& P. Brown (2022) ``Geographically-dependent individual-level models for infectious diseases transmission''   in {\it Biostatistics}, 23(1), 1-17.  https://doi.org/10.1093/biostatistics/kxaa009
+
+ 
+ \item {\bf {\em J. Angevaare}}, Z. Feng \&  {\bf R. Deardon} (2022)  ``Pathogen.jl: Infectious disease transmission network modelling with Julia''     in  {\it Journal of Statistical Software}, 104(4), 1?30. 
+
+\item {\bf {\em G. Pokharel }}  \& {\bf R. Deardon} (2022) ``Emulation-based inference for spatial infectious disease transmission models incorporating event time uncertainty''   in  the {\it Scandinavian Journal of Statistics}, 49(1), 455-479.   http://doi.org/10.1111/sjos.12523 
+
+ \item  {\bf {\em  M. Ward}}, L. Deeth \& {\bf R. Deardon} (2022) ``Cluster-aggretion-disaggregation methods for spatial individual level models of infectious disease transmission''  in  {\it Spatial \& Spatiotemporal Epidemiology}, 41: 100497. https://doi.org/10.1016/j.sste.2022.100497
+
+
+\item {\bf {\em  S. A. Naqvi}}, M. King, T. DeVries,  H. Barkema \& {\bf R. Deardon}   (2022) 
+ ``Data considerations for developing deep learning models for dairy applications''
+ in {\it  Computers and Electronics in Agriculture},  196: 106895. https://doi.org/10.1016/j.compag.2022.106895
+
+
+\item {\bf {\em  S. A. Naqvi}}, M. King, R. Matson, T. DeVries, {\bf R. Deardon}  \& H. Barkema (2022)
+ ``Mastitis detection with recurrent neural networks in farms using automated milking systems''
+  in {\it  Computers and Electronics in Agriculture}, 192: 106618. https://doi.org/10.1016/j.compag.2021.106618
+ 
+
+ \item  {\bf {\em  B. Jafari}} \& {\bf R. Deardon}  (2022) ``Bias and Bias-Correction for Individual-Level Models of Infectious Disease''   in  {\it Spatial \& Spatiotemporal Epidemiology},  43,
+100524.
+
+\item J. Di Francesco, G.P.S. Kwong, {\bf R. Deardon}, S. L. Checkley, G. F. Mastromonaco, F. Mavrot, L. Leclerc \& S. Kutz (2022) ``Intrinsic and extrinsic factors associated with increased qiviut cortisol in wild muskoxen (Ovibos moschatus)'' in {\it Conservation Physiology},  10(1), coab103. \\ https://doi.org/10.1093/conphys/coab103
+ 
+
+
+\hrulefill{}
+
+
+
+
+\item {\bf {\em W. Almutiry}}, {\bf {\em V. Warriyar}} \& {\bf R. Deardon} (2021)  ``Continuous-time individual-level models of infectious disease: EpiILMCT''   in the {\it Journal of Statistical Software}, 98(10), 1-44. \\ https://www.jstatsoft.org/article/view/v098i10
+
+\item {\bf {\em L. Amiri}}, M. Torabi,  {\bf R. Deardon}  \& M. Pickles (2021). ``Spatial modeling of individual-level infectious disease transmission: tuberculosis data in Manitoba, Canada'' in  {\it Statistics in Medicine}, 40(7), 1678-1704.  https://doi.org/10.1002/sim.8863
+
+
+
+\item {\bf {\em J. Angevaare}}, Z. Feng \&  {\bf R. Deardon}  (2021) ``Inference of latent event times and transmission network in individual level infectious disease models''  in {\it Spatial \& Spatiotemporal Epidemiology}, 37, 100410. https://doi.org/10.1016/j.sste.2021.100410
+
+
+\item {\bf {\em W. Almutiry}} \& {\bf R. Deardon} (2021) ``Contact network uncertainty in individual level models of infectious disease transmission''  in  {\it Statistical Communications in Infectious Diseases}, 13(1). DOI: https://doi.org/10.1515/scid-2019-0012
+
+
+
+\item {\bf {\em Z. Liu}}, {\bf R. Deardon}, Y. Fu, {\bf {\em T. Ferdous}},   T. Ware \&  Q. Cheng  (2021)``Estimating parameters of two-level individual-level models of the COVID-19 epidemic using ensemble learning classifiers''   in  {\it Frontiers in Physics}, 8(11), Article 602722. doi: 10.3389/fphy.2020.602722
+
+
+\item {\bf {\em A. Novaes de Amorim}},  V. Saini  \&  {\bf R. Deardon} (2021) ``A stacked ensemble method for forecasting influenza-like illness visit volumes at emergency departments''  in  {\it PLOS One}, 16(3): e0241725.  \\ https://doi.org/10.1371/journal.pone.0241725
+
+
+
+\item S. Andres-Lasheras, R. Ha, R. Zaheer, C. Lee, C. Booker, C. Dorin, J. Van Donkersgoed, {\bf R. Deardon}, S. Gow, S. Hannon, S. Hendrick, M. Anholt \& T. McAllister  (2021) ``Prevalence and risk factors associated with antimicrobial resistance in bacteria related to bovine respiratory disease - A broad cross-sectional study of beef cattle at entry into Canadian feedlots''  in  {\it Frontiers in Veterinary Science}, 8, 710. doi: 10.3389/fvets.2021.692646
+
+
+
+\item B. Singh, {\bf {\em M. Lowerison}}, R. Lewinson, I. Vallerand, {\bf R. Deardon}, J. Gill, B. Singh  \& H. Barkema (2021) ``Public health interventions slowed but did not halt the spread of COVID-19 in India''  in  {\it Transboundary and Emerging Diseases},  68(4), 2171-2187. https://doi.org/10.1111/tbed.13868
+
+
+
+\item C. Doolan, T. Louie,  C. Lata,  O. Larios,  W. Stokes,  J. Kim,  K. Brown,  P. Beck,    {\bf R. Deardon} \&  D. Pillai (2021) ``Latent class analysis for the diagnosis of Clostridioides difficile infection''  in  {\it  Clinical Infectious Diseases},  73(9):e2673-e2679. https://doi.org/10.1093/cid/ciaa1553
+
+
+\item B. Singh, M. Ward, {\bf {\em M. Lowerison}},  R. Lewinson, I. Vallerand, {\bf R. Deardon}, J. Gill, B. Singh  \& H. Barkema (2021) ``Meta-analysis and adjusted estimation of COVID-19 case fatality risk in
+India and its association with the underlying comorbidities''  in  {\it  One Health}, 13:100283.  \\ https://doi.org/10.1016/j.onehlt.2021.100283.
+
+
+
+
+
+\hrulefill{}
+
+
+
+
+
+\item {\bf {\em W. Almutiry}} \& {\bf R.  Deardon} (2020) ``Incorporating contact network uncertainty in individual level models of infectious disease using approximate Bayesian computation''  in   {\it The International Journal of Biostatistics}, 16(1), Article 20170092. DOI: https://doi.org/10.1515/ijb-2017-0092
+
+
+
+
+\item {\bf {\em V. Warriyar}}, {\bf {\em W. Almutiry}} \& {\bf R. Deardon} (2020) ``Individual level modelling of infectious disease data: EpiILM''  in {\it  The R Journal}  12(1), 199-217.
+
+
+\item G. Hazelwood, {\bf {\em G. Pokharel}}, {\bf R. Deardon},  D. Marshall, C. Bombardier, G. Tomlinson, C. Ma, C. Seow, R. Panaccione \& G. Kaplan (2020) ``Patient preferences for maintenance therapy in Crohn's disease: a discrete-choice experiment''  in   {\it PLoS One}, 15(1):e0227635.
+
+\item G. Hazlewood, S. Whittle, {\bf {\em M. Kamso}}, E. Akl, G. Wells, P. Tugwell, M. Thomas, C. Lee, M. Ejaredar, D. Choudhary, D.  Neuen, J. New‐Tolley, M. Powell, A. Quinlivan, A. Qaddoura, {\bf R. Deardon}, L. Maxwell, J. Pardo Pardo, S. Kelly, R. Buchbinder (2020) ``Disease‐modifying anti‐rheumatic drugs for rheumatoid arthritis: a systematic review and network meta‐analysis'' in {\it  Cochrane Database of Systematic Reviews}, 2020 (3), CD013562
+
+
+\item G.P.S. Kwong, {\bf R. Deardon}, {\bf {\em S. Hunt }} \& M. Guerin  (2020) ``Bayesian optimal  design of agricultural infectious disease transmission experiments''  available online in  {\it  Statistical Communications in Infectious Diseases}, 12(1).  https://doi.org/10.1515/scid-2018-0005
+
+
+ \item {\bf{\em R. Romanescu}} \& {\bf R. Deardon} (2020)   ``Implementation of power law network models of epidemic surveillance data for better evaluation of outbreak detection alarms''   in  {\it  Statistical Communications in Infectious Diseases}, 12(1).  https://doi.org/10.1515/scid-2018-0004.
+
+
+\item D. Nobrega,  {\bf {\em S. A. Naqvi}}, S. Dufour, {\bf R. Deardon}, J. Kastelic, J. de Buck \& H. Barkema (2020) ``Critically important antimicrobials are not needed to treat non-severe
+clinical mastitis in lactating dairy cows: results from a network meta-analysis''  in the {\it Journal of Dairy Science}, 103(11), 10585-10603.  https://doi.org/10.3168/jds.2020-18365
+
+
+ \item {\bf {\em G. Pokharel}}, {\bf R. Deardon}, S. Johnson, G. Tomlinson, P. Hull,  G. Hazelwood (2020) ``Effectiveness of initial methotrexate-based treatment approaches in early rheumatoid arthritis: An elicitation of rheumatologists' beliefs''  in {\it Rheumatology}, keaa803. https://doi.org/10.1093/rheumatology/keaa803
+
+
+\item A. Ogilvy, S. Collins,  T. Tuokko,  M. Hilts, {\bf R. Deardon},  W. Hare \& A. Jirasek  (2020) ``Optimization of solid tank design for fan-beam optical CT based 3D radiation dosimetry''
+ in  {\it Physics in Medicine \& Biology}. 65, 245012. https://doi.org/10.1088/1361-6560/abbf98
+
+
+
+\hrulefill{}
+
+
+\item {\bf {\em C. Augusta}}, {\bf R. Deardon} \& G. Taylor (2019)  ``Deep learning for supervised classification of  spatial epidemics'' in  {\it  Spatial \& Spatiotemporal Epidemiology}, 29, 187-198.
+
+
+\item  {\bf {\em  M. Ward}}, {\bf {\em  A. Stanley}}, L. Deeth  {\bf R. Deardon}, Z. Feng \& L. Trotz-Williams  (2019) ``Methods for detecting seasonal influenza epidemics using a school absenteeism surveillance system''  in {\it BMC Public Health},  19, Article: 1232. 
+
+
+\item {\bf {\em C. Augusta}}, G. Taylor \& {\bf R. Deardon}  (2019)   ``Dynamic contact networks of swine movement in Manitoba, Canada: characterization and implications for infectious disease spread''   in {\it Trans-boundary and Emerging Diseases}, 66(6), 1910 - 1919. DOI: https://doi.org/10.1111/tbed.13220.
+
+\item  {\bf {\em G. Pokharel}}, {\bf R. Deardon}, C. Barnabe, V. Bykerk, S. Bartlett, L. Bessette, G. Boire, C. Hitchon, E. Keystone, J. Pope, O. Schieer, D. Tin, C.Thorne \& G. Hazelwood (2019) ``Joint estimation of remission and response for methotrexate-based DMARD options in rheumatoid arthritis: A bivariate network meta-analysis''  in {\it  ACR Open Rheumatology}, 1(8), 471-479.  \\ https://onlinelibrary.wiley.com/doi/epdf/10.1002/acr2.11052.    
+
+
+
+\item {\bf {\em M. Lowerison}}, C. Josephson, N. Jette, T. Sajobi, S. Patten, T. Williamson,  {\bf R. Deardon}, H. Barkema, \& S. Wiebe (2019) ``Association of levels of specialized care with risk of premature mortality in patients with epilepsy"  in  {\it  JAMA Neurology}, 76(11), 1352-1358.  \\ DOI: https://doi.org/10.1001/jamaneurol.2019.2268
+
+\item S. Coward, F. Clement, E. Benchimol, C. Bernstein, J. Antonio Avina-Zubieta, A. Bitton, M. Carroll, G. Hazelwood, K. Jacobson, S. Jelinski, {\bf R. Deardon}, J. Jones,  M. Ellen Kuenzig, D. Leddin, K. McBrien, S. Murphy, G. Nguyen, A. Otley, R. Pannaccione, A. Rezaie, G. Rosenfeld, J. Pena-Sanchez, H. Singh, L. Targownik, G. Kaplan (2019) ``Past and future burden of inflammatory bowel diseases based on modeling of population-based data"  in  {\it Gastroenterology}, 156(5), 1345-1353.
+
+
+\item J. Cheaveau, D. Marasinghe, S. Akakpo, {\bf R. Deardon}, C. Naugler, A. Chin, D. R. Pillai (2019)  ``The impact of malaria on liver enzymes: a retrospective cohort study (2010-2017)'' in {\it Open Forum Infectious Diseases}, 6(6).
+
+
+\hrulefill{}
+
+ 
+\item  T. Petukhova, D. Ojkic, B. McEwen, {\bf R. Deardon} \&  Z. Poljak  (2018)  ``Assessment of ARIMA, GLARMA and random forest models for predicting Influenza A virus frequency in swine in Ontario, Canada''   in  {\it PLoS One}, 13(6): e0198313.
+
+ \item {\bf {\em  G. Pokharel}} \& {\bf R. Deardon} (2018) ``Spatially informed back-calculation for spatio-temporal infectious disease models''   in {\it  Statistical Communications in Infectious Diseases}, Vol. 10(1), Article 2.
+
+\item M. Lipson,  {\bf R. Deardon}, N. Switzer, C. DeGara, C. Ball \& S. Grondin (2018)  ``Practice and attitudes regarding double gloving among staff surgeons and surgical trainees''   in the {\it Canadian Journal of Surgery},  61(4), 244-250.
+
+
+\hrulefill{}
+
+
+\item D. Toms, {\bf R. Deardon} \& M. Ungrin (2017) ``Climbing the mountain: Experimental design for efficient optimization of stem cell bioprocessing''   in the {\it Journal of Biological Engineering}, Vol. 11, No. 1
+
+
+\item {\bf{\em R. Romanescu}} \& {\bf R. Deardon}  (2017)  ``Fast inference for network models of infectious disease spread''  in the {\it Scandinavian Journal of Statistics}, 44(3), 666-683 (DOI: 10.1111/sjos.12270).
+
+
+\hrulefill{}
+
+
+
+\item {\bf {\em G. Pokharel}} \& {\bf R. Deardon} (2016) ``Gaussian process emulators for spatial models of infectious disease''   in the {\it Canadian Journal of Statistics}, 44(4), 480-501.
+
+\item {\bf{\em R. Romanescu}} \& {\bf R. Deardon} (2016) ``Modelling two strains of disease via aggregate-level infectivity curves''  in the {\it  Journal of Mathematical Biology},  72(5), 1195-1224.
+
+
+\item    {\bf{\em L. Deeth}} \& {\bf R. Deardon} (2016) ``Spatial data aggregation for spatio-temporal individual-level models of infectious disease transmission''  in   {\it  Spatial \& Spatio-temporal Epidemiology}, 17, 95-104.
+
+
+ \item  {\bf{\em R. Malik}}, {\bf R. Deardon} \&  {\bf{\em  G.P.S. Kwong}} (2016)  ``Parameterizing spatial models of infectious disease spread using sampling-based likelihood approximations''     in {\it PLoS One}, 11(1): e0146253. doi: 10.1371/journal.pone.0146253.
+ 
+\hrulefill{}
+
+
+ 
+
+
+
+\item    {\bf{\em L. Deeth}}, {\bf R. Deardon} \& D. Gillis (2015) ``Model choice using the Deviance Information Criterion for latent conditional individual-level models of infectious disease spread'' in  {\it Epidemiologic Methods}, 4(1), 47-68.
+
+\item     {\bf R. Deardon}, {\bf{\em X. Fang}} \& {\bf{\em  G.P.S. Kwong}} (2015)  ``Statistical modelling of  spatio-temporal infectious disease tranmission''  in {\it Analyzing and Modeling Spatial and Temporal Dynamics of Infectious Diseases}, 211-232, John Wiley \& Sons. (Ed: D. Chen, B. Moulin, J. Wu).
+
+
+\hrulefill{}
+
+
+
+\item     T. J. McKinley, J. Ross, {\bf R. Deardon} \& A. Cook (2014) ``Simulation-based Bayesian inference for epidemic models'' in {\it Computational Statistics \& Data Analysis}, 71,  434-447.
+
+\item  {\bf{\em  R. Malik}}, {\bf R. Deardon},  {\bf{\em G.P.S. Kwong}} \& B. J. Cowling (2014) ``Individual-level modeling of the spread of influenza within households''  in {\it Journal of Applied Statistics}, 41(7), 1578-1592. 
+
+\item {\bf {\em G.  Pokharel}} \& {\bf R. Deardon} (2014) ``Supervised learning and prediction of spatial epidemics''   in {\it Spatial \& Spatio-Temporal Epidemiology}, 11, 59-77.
+
+
+
+\hrulefill{}
+
+
+
+\item    {\bf{\em L. Deeth}} \& {\bf R. Deardon} (2013) ``Latent conditional individual level models for infectious disease modelling''   in  {\it The International Journal of Biostatistics}, 9(1), 75-93.
+
+\item    {\bf {\em S. Subedi}}, Z. Feng, {\bf R. Deardon} \& F. Schenkel (2013) ``SNP selection for predicting a quantitative trait''  in the  {\it  Journal of Applied Statistics}, 40(3), 600-613.
+
+
+\item {\bf{\em N. Bifolchi}}, {\bf R. Deardon} \& Z. Feng (2013) ``Spatial approximations of network-based individual level infectious disease models''    in  {\it Spatial \& Spatio-temporal Epidemiology }, 6, 59-70.
+
+
+
+
+\item    T. Agvar, {\bf R. Deardon} \& J. Fryxyll (2013) ``An empirically parameterized individual based model of animal movement, perception and memory''  in  {\it Ecological Modelling},  251: 158-172.
+
+
+\item  K. Bottoms, Z. Poljak, C. Dewey, {\bf R. Deardon}, D. Holtkamp \& R. Friendship (2013) ``Evaluation of external biosecurity practices on southern Ontario farms''  in  {\it Preventive Veterinary Medicine}, 109(1-2):58-68.
+
+
+\item     {\bf{\em G.P.S. Kwong}}, Z. Poljak, {\bf R. Deardon} \& C. Dewey (2013) ``Bayesian analysis of risk factors for infection with a genotype of porcine reproductive and respiratory syndrome virus in Ontario swine herds using monitoring data''  in  {\it Preventive Veterinary Medicine}, 110(3-4):405-17.
+
+\item    K. Bottoms, Z. Poljak, B. Friendship, J. Alsop, {\bf R. Deardon} \& C. Dewey (2013) ``An assessment of external biosecurity on southern Ontario swine farms, and its application to surveillance on a geographic level''    in the  {\it Canadian Journal of Veterinary Research}, 77(4), 241 - 253.
+
+\hrulefill{}
+
+
+\item   {\bf  {\em I.Vrbik}, R. Deardon}, Z. Feng, {\bf  {\em A. Gardner}} \& J. Braun (2012) ``Using individual-level models to model the spatio-temporal dynamics of combustion'' in {\em Bayesian Analysis}, 7(3),  615 -- 638. (Funded by:  NSERC).
+
+\item   {\bf  {\em G.P.S. Kwong} \& R. Deardon} (2012) ``Linearized forms of individual-level models for large-scale spatial infectious disease systems'' in {\em Bulletin of Mathematical Biology}, 74(8), 1912 -- 37. (Funded by:  NSERC, OMAFRA).
+
+\item Y. Hosseinkashi, S. Chenouri, C. Small \& {\bf R. Deardon} (2012) ``A Stochastic Graph Process for Epidemic Modelling''   in {\em Canadian Journal of Statistics}, 40(1), 55 -- 67. (Funded by:  NSERC).
+
+\item {\bf R. Deardon, {\em B. Habibzadeh} \& {\em H. Y. Chung}} (2012) ``Spatial measurement error in infectious disease models''    in {\it Journal of Applied Statistics}, 39(5), 1139 -- 1150. (Funded by:  NSERC).
+
+\item \noindent  J. Gallienne,  C. Gregg, E. LeBlanc, N. Yaakob, D. Wu, K. Davies, N. Rawlings, Pierson, {\bf R. Deardon}, \& Bartlewski ``Correlations between ultrasonographic characteristics of corpora lutea (CL) and systemic concentrations of progesterone (P4) during the discrete stages of CL lifespan and secretory activity in cyclic ewes'' in {\em Experimental Biology and Medicine}, 237, 505 -- 515.
+
+\item H. Le, Z. Poljak,  {\bf R. Deardon} \& C. Dewey (2012) ``Clustering of and risk factors for the porcine high fever disease in a region of Vietnam''   in {\it Trans-boundary and Emerging Diseases}, 59(1), 49 -- 61.
+
+\item   K. Bottoms, Z. Poljak, C. Dewey, {\bf R. Deardon}, D. Holtkamp \& R. Friendship (2012)  ``Investigation of strategies for the introduction and transportation of replacement gilts on southern Ontario sow farms''   in  {\it BMC Veterinary Research}, 8, 217.
+
+
+\hrulefill{}
+
+
+\item {\bf {\em A. Gardner}}, {\bf R. Deardon} \& G. A. Darlington (2011) ``Goodness-of-fit measures for individual-level infectious disease models in a Bayesian framework''   in {\em Spatial \& Spatio-temporal Epidemiology,}  2(4), 273 -- 281.  (Funded by:  NSERC, OMAFRA).
+ 
+\hrulefill{}
+
+
+\item {\bf R. Deardon}, S. P. Brooks, B. T. Grenfell, M. J. Keeling, M. J. Tildesley, N. J. Savill, D. J. Shaw \& M. E. J. Woolhouse (2010), ``Inference for individual-level models of infectious diseases in large populations'' in {\it Statistica Sinica}, 20(1), 239-261.  (Funded by:  Wellcome Trust, UK).
+
+\item {\bf {\em B. Habibzadeh} \& R. Deardon} (2010), ``The effect of misspecifying latent and infectious periods in space-time epidemic models'' in {\it Statistical Communications in Infectious Diseases},  Vol. 2: Issue 1, Article 7.  (Funded by:  NSERC).
+
+\hrulefill{}
+
+
+\item T. J. McKinley, A. Cook \& {\bf R. Deardon} (2009) ``Inference in epidemic models without likelihoods''  in {\it The International Journal of Biostatistics}, 5(1), Article 24. (Funded by:  NSERC).
+
+\item P.E. Caines, {\bf R. Deardon} \& H. P. Wynn (2009)  ``Bayes' nets of time series: stochastic realizations and projections'' in {\it Optimal Experimental Design and Related Areas} (Ed: L Pronzato and A Zhigliavsky), 155-166, Springer. 
+
+
+\hrulefill{}
+
+\item A. J. Grant, M. Sheppard, {\bf R. Deardon}, S. P. Brown, G. Foster, C. E. Bryant,                    D. J. Maskell \& P. Mastroeni (2008) ``Caspase 3-dependent phagocyte death during systemic Salmonella enterica serovar Typhimurium infection of mice'' in {\it Immunology} ,125(1), 28-37.
+
+\item M. J. Tildesley, {\bf R. Deardon}, N. J. Savill, P. Bessell, S. P Brooks, M. E. J. Woolhouse, B. T. Grenfell \& M. J. Keeling (2008) ``Accuracy of models for the 2001 foot-and-mouth disease epidemic'' in {\it Proceedings of the Royal Society B}, 275(1641), 1459-1468. (Funded by:  Wellcome Trust, UK).
+
+\hrulefill{}
+
+
+\item  N. J. Savill, D. J. Shaw, {\bf R. Deardon}, M. J. Tildesley, M. J. Keeling, S. P. Brooks, M. E. J. Woolhouse \& B. T. Grenfell (2007), ``Effect of data quality on estimates of farm infectiousness trends in the UK 2001 foot-and-mouth disease epidemic'' in {\it Journal of the Royal Society Interface}, 4, 235-241. (Funded by:  Wellcome Trust, UK).
+
+\hrulefill{}
+
+
+\item {\bf R. Deardon}, S. G. Gilmour, N. A. Butler, K. Phelps \& R. Kennedy (2006), ``Designing field experiments which are subject to representation bias'' in {\it Journal of Applied Statistics}, 33, 7, 665-680. (Funded by:  EPSRC, UK).
+
+\item M. J. Tildesley, N. J. Savill, D. J. Shaw, {\bf R. Deardon}, S. P. Brooks, M. E. J. Woolhouse, B. T. Grenfell \& M. J. Keeling (2006),
+``Optimal reactive vaccination strategies for an outbreak of foot-and-mouth disease in Great Britain'' in {\it Nature}, 440, 1080, 83-86. (Funded by:  Wellcome Trust, UK).
+
+\item N. J. Savill, D. J. Shaw, {\bf R. Deardon}, M. J. Tildesley, M. J. Keeling, S. P. Brooks, M. E. J. Woolhouse \& B. T. Grenfell  (2006),
+``Topographic determinants of foot and mouth disease transmission in the UK 2001 epidemic'' in {\it BMC Veterinary Research}, Vol. 2:3. (Funded by:  Wellcome Trust, UK).
+
+
+\hrulefill{}
+
+
+
+\item {\bf R. Deardon}, S. G. Gilmour, N. A. Butler, K. Phelps \& R. Kennedy (2004), ``A method for ascertaining and controlling representation bias in field trials for airborne plant pathogens'' in the {\em Journal of Applied Statistics}, 31, 3, 2004, 329-343.
+
+\hrulefill{}
+
+
+\item P.E. Caines, {\bf R. Deardon} \& H. P. Wynn (2002)  ``Conditional Orthogonality and Conditional Stochastic Realization'' in {\em New Directions in Mathematical Systems Theory and Optimization},  Springer.
+
+\hrulefill{}
+
+\end {etaremune}
+
+
+
+
+
+
+\newpage
+
+
+\begin {itemize}
+
+
+
+
+\item[]
+\begin{center}
+ {\bf {Conference Proceedings} }
+ \end{center}
+
+\item A. Ogilvy, S. Collins, W. Hare, M. Hilts, T. Tuokko, {\bf R. Deardon}  \& A. Jirasek. ``Optimization of solid tank design for fan-beam optical CT based 3D radiation dosimetry.'' Submitted to the International Conference on 3D and Advanced Dosimetry (IC3DDose), Quebec City, Canada.
+
+\item {\em M. Aghajanpoorpasha} \& {\bf R. Deardon} (2019) ``On Minimum Cost Non-Uniform Sampling Schemes for Optimal Design of Control Charts: Application to $\overline{X}$ and $T^2$ Control Charts''  Fourth North American International Conference on Industrial Engineering and Operations Management (IEOM).
+
+
+\item  P.E. Caines, {\bf R. Deardon} \& H. P. Wynn (2002) ``Conditional independence and general factorisations in times series graphical models'' in the {\it 2002 Proceedings of the American Statistical Association, Physical and Engineering Sciences Section} [CD-ROM], Alexandria, VA: American Statistical Association.
+
+
+\hrulefill{}
+
+
+\item[]
+\begin{center}
+ {\bf {Published Letters} }
+ \end{center}
+
+\item M. J. Keeling, M. J. Tildesley, N. J. Savill, M. E. J. Woolhouse, D. J. Shaw, {\bf R. Deardon}, S. P. Brooks, \& B. T. Grenfell (2007), ``Veterinary epidemiology: Vaccination strategies for foot-and-mouth disease'' (reply to Brief Communication Arising by Kitching et al.) in {\it Nature}, 445, E12-E13, 8 February 2007.
+
+\item M. J. Keeling, M. J. Tildesley, N. J. Savill, M. E. J. Woolhouse, D. J. Shaw, {\bf R. Deardon}, S. P. Brooks, \& B. T. Grenfell (2006), response to letter, ``FMD control strategies'' by Wingfield, Miller \& Honhold in {\it The Veterinary Record}, May 20, 2006.
+(Funded by:  Wellcome Trust, UK).
+
+
+\hrulefill{}
+
+
+
+
+\item[]
+\begin{center}
+ {\bf {Technical \& Other Reports} }
+ \end{center}
+
+\item M. Lewis, P. Brown, C. Colijn, L. Cowen, C. Cotton, T. Day, {\bf R. Deardon}, D. Earn, D. Haskell, J. Heffernan, P. Leighton, K. Murty, S. Otto, E. Rafferty, C. Hughes Tuohy, J. Wu \& H. Zhu (2023) ``Charting a future for emerging infectious disease modelling in Canada.''  http://hdl.handle.net/1828/15042
+
+\item {\bf R. Deardon} \& S. P. Brooks (2007) ``Bayesian modelling of the spatio-temporal dynamics of large-scale epidemics,'' technical report, {\it Statistical Series} $\#$2007-312, Department of Mathematics \& Statistics, University of Guelph.
+
+\item P.E. Caines, {\bf R. Deardon} \& H. P. Wynn (2007) ``Algebraic Methods for Conditional Independence in Time Series Graphical Models,'' technical report, {\it Statistical Series} $\#$2007-313, Department of Mathematics \& Statistics, University of Guelph.
+
+\hrulefill{}
+
+
+
+
+\item[]
+\begin{center}
+ {\bf {Software} }
+ \end{center}
+
+\item {\bf {\em C. Ward}},  {\bf R. Deardon} \& A. Schmidt (2023) ``epidemicBCM: Bayesian modelling of dynamic behavioural change during an epidemic'' 
+\begin{itemize} 
+ \item {Github Repository (R Nimble):} https://github.com/ceward18/epidemicBCM
+ \end{itemize}
+ 
+\vskip 0.2cm
+
+
+\item {\bf {\em W. Almutiry}}, {\bf {\em V. Warriyar}} \& {\bf R. Deardon} (2019)  EpiILMCT: Continuous Time Individual-Level Models of Infectious Disease.
+\begin{itemize} \item {CRAN Webpage:} https://cran.r-project.org/web/packages/EpiILMCT/index.html 
+ \item {Github Repository:} https://waleedalmutiry.github.io/EpiILMCT/ 
+\end{itemize}
+
+\vskip 0.2cm
+
+
+\item {\bf {\em J. Angevaare}}, {\bf R. Deardon}, Z. Feng (2017) PhyloTrees.jl: Phylogenetic trees in Julia. 
+
+\begin{itemize} \item  Github repository (Julia): https://github.com/jangevaare/PhyloTrees.jl
+\end{itemize}
+
+\vskip 0.2cm
+
+
+\item {\bf {\em J. Angevaare}}, {\bf R. Deardon}, Z. Feng (2017) SubstitutionModels.jl: Biological Sequence Substitution Models for Julia. 
+\begin{itemize} \item Github repository (Julia). https://github.com/BioJulia/SubstitutionModels.jl 
+\end{itemize}
+
+\vskip 0.2cm
+
+
+
+\item {\bf {\em V. Warriyar}} \& {\bf R. Deardon} (2017) 
+EpiILM: Spatial and Network Based Individual Level Models for Epidemics (R Package).  
+\begin{itemize} \item {CRAN Webpage:} https://CRAN.R-project.org/package=EpiILM
+\end{itemize}
+
+\vskip 0.2cm
+
+\item {\bf {\em J. Angevaare}}, {\bf R. Deardon}, Z. Feng (2016) Pathogen.jl: Simulation and inference tools for phylodynamic individual level models.
+\begin{itemize} \item   Github repository (Julia):  https://github.com/jangevaa/Pathogen.jl  
+\end{itemize}
+
+\vskip 0.2cm
+
+
+\item {\bf {\em J. Angevaare}}, {\bf R. Deardon}, Z. Feng (2014) ilmtools: Tools for simulating and performing inference of individual level infectious disease transmission models. 
+
+\begin{itemize} \item  Github repository (Julia): https://github.com/jangevaa/ilmtools 
+\end{itemize}
+
+
+
+
+\hrulefill{}
+
+
+
+
+
+\item[]
+\begin{center}
+ {\bf {Theses} }
+ \end{center}
+
+\item {\bf R. Deardon} (2001) ``Representation Bias in Field Trials for Airborne Plant Pathogens'' Ph.D. Thesis, School of Applied Statistics, University of Reading, UK.
+
+\item {\bf R. Deardon} (1997) ``Multiple Testing: An Investigation of the Power Properties of Members of a Family of Closed Test (including Hommel's Test)'' M.Sc. Thesis, Department of Mathematics, University of Southampton, UK.
+\end {itemize}
+
+
+\end{document}
+
+
+~
+~
+
+\newpage
+
+
+\begin{center}
+ {\bf {Upcoming Presentations}}
+ \end{center}
+
+\begin {itemize}
+
+
+
+
+
+\item Invited talk at the International Statistical Institute World Statistics Congress, Ottawa, Canada (July 2023) ``Identifying behavioural change mechanisms in epidemic models'' 
+
+\item Invited   American Statistical Association (ASA) Committee on International Relations in Statistics (CIRS) and Statistics Without Borders  (SWB) Seminar (July 2023)  ``Introduction to Bayesian Modelling of Epidemics: From Population to Individual-level Models'' (Online)
+
+
+\item Invited talk at the CANSSI-NISS Health Data Science Workshop (August 2023), Waterloo, Canada ``Individual-level models of disease transmission: a tool for precision health?''
+
+
+\item Invited talk at the Joint Statistical Meetings, Toronto, Canada (August 2023) ``Behavioural change mechanisms in spatial disease transmission models''
+
+\item Invited talk at the Conference in Statistics and Data Science with Applications in Biology, Genetics, Public Health, and Finance, Thompson Rivers University, Kamloops, Canada (August 2023)  ``Feedback mechanisms in epidemic models: Is your population alarmed?''
+
+\item Invited Biostatistics/SAGE Seminar at the Department of Mathematics \& Statistics, University of Calgary, Calgary, Canada (Sept. 2023) ``Feedback mechanisms in epidemic models: Is your population alarmed?''
+
+
+
+\end {itemize}
+
+
+\hrulefill{}
+
+~
+~
+
+\begin{center}
+ {\bf {Presentations}}
+ \end{center}
+
+\begin {etaremune}
+
+\item Invited talk at the Data Science Research Day, University of Calgary, Calgary, Canada (June 2023). ``Data-driven epidemic modelling: can we do better?''
+
+\item Invited talk at the Department of Mathematics \& Statistics, University of British Columbia, Vancouver, Canada  (June 2023) ``Epidemic models: can we make them behave better?'' (Online)
+
+
+\item Contributed talk at the Statistical Society of Canada Annual Meeting, Carleton University, Ottawa, Canada   (May 2023) ``Population-dependent time-varying transmission rates in epidemic models''
+
+
+
+
+\item Invited talk at the BayesComp Workshop on Bayesian Inference in Epidemic Models, Levi, Finland (March 2023) ``Identifying behavioural change mechanisms in epidemic models''
+
+\item Invited talk at the International Conference of the ERCIM WG on Computational and Methodological Statistics (CMStatistics), Kings College London, London, UK (Dec. 2022) ``Behavioural change in epidemic models''
+
+
+\item Invited talk at the Canadian Network for Modelling Infectious Diseases (CANMOD) (Oct. 2022) ``Behavioural change in epidemic models'' (Online)
+
+\item  Plenary talk at the Waterloo Student Conference in Statistics, Actuarial Science and Finance, Waterloo, Ontario, Canada (Oct. 2022) ``Epidemic models: can we make them behave better?''
+
+\item Invited talk at GEOMED Conference, Irvine, California, USA (Oct. 2022) ``Variable screening in spatial epidemic models''
+
+\item One day workshop at the International Society for Bayesian Analysis World Meeting, Montreal, Quebec, Canada (June 2022) ``Bayesian Modelling of Epidemics'' (co-taught with  {{\em C. Ward}}).
+
+\item Invited talk at the International Conference of the ERCIM WG on Computational and Methodological Statistics (CMStatistics), King's College, London, UK (December 2021) ``Behavioural change in spatial epidemic models'' (Online)
+
+\item Invited talk at the Society of Undergraduate Mathematics Calgary (SUM-C) Research Evening, University of Calgary, Calgary, Canada (Oct. 2021)  ``Infectious Disease Modelling \& Surveillance''
+
+\item Invited talk at the Joint Statistical Meetings, Seattle, USA (August 2021) ``Machine learning-assisted infectious disease modelling'' (Online)
+
+
+\item Invited talk at  the National Institute for Applied Statistics Research Australia (NIASRA),  University of Wollongong, Australia  (July 2021) ``Fast parameterization of spatial epidemic models: let's emulate.'' (Online)
+
+\item Invited talk at the ISI World Statistics Congress, The Hague, the Netherlands (July 2021) ``Infectious disease modelling in a hurry'' (Online)
+
+
+
+\item Invited talk at the Statistical Society of Canada Annual Meeting, Memorial University, St. John's, Canada (June 2021) ``Infectious disease modelling with the assistance of machine learning'' (Online)
+
+
+\item Invited talk at the Statistical Society of Canada Annual Meeting, Memorial University, St. John's, Canada (June 2021) ``Information on the NSERC 2021 competition results and Discovery Grant preparation''  (co-presented with Adele Ngi-Song, NSERC Program Officer)  (Online)
+
+\item Invited  discussant for the ``Student supervision: Advice and insights on academic advising'' session
+ at the Statistical Society of Canada Annual Meeting, Memorial University, St. John's, Canada (June 2021) (Online)
+ 
+\item  Invited talk at CANSSI-NISS Health Data Science Workshop (May 2021) ``Modelling COVID-19 using machine learning-based inference methods'' (Online)
+
+\item  Short course (half-day) at CANSSI-NISS Health Data Science Workshop (May 2021) ``Introduction to disease modeling'' (Online)
+
+\item  Invited talk at University of Calgary, Calgary, Canada (March 2021) ``Machine learning our way to data-driven infectious disease modelling'' (Online)
+
+
+\item  Invited talk at McMaster University, Hamilton, Canada (March 2021) ``Machine learning our way to data-driven infectious disease modelling'' (Online)
+
+
+\item Invited talk at the International Conference of the ERCIM WG on Computational and Methodological Statistics (CMStatistics), King's College, London, UK (December 2020) ``Machine learning assisted infectious disease modelling'' (Online)
+
+\item  Invited talk at University of Victoria, Victoria, Canada  (October 2020) ``Geographically-dependent individual-level models for infectious disease transmission'' (Online)
+
+\item Invited talk at the Joint Statistical Meetings, Philadelphia, USA (August 2020) ``Geographically-dependent individual-level models for infectious disease transmission'' (Online)
+
+\item Biostatistics Section Annual Workshop (Short course) at the Statistical Society of Canada Conference, Ottawa, Canada (June 2020) ``Introduction to Epidemic Modelling'' (Online)
+
+\item Invited talk at the Department of Mathematics \& Statistics, York University, Canada (March 2020)  ``Parameterization via emulation: Spatial models of infectious disease transmission''
+
+\item Plenary talk at the Annual Meeting of Alberta Statisticians, University of Calgary, Calgary, Canada (Sept. 2019) ``Approximate Bayesian computation for epidemic models with uncertain underlying contact networks"
+
+\item Invited talk at Canadian Organization of Medical Physicists (COMP) Annual Meeting, Kelowna, BC, Canada. (Sept. 2019) ``Artificial intelligence in infectious disease epidemiology''
+
+\item Invited talk at GEOMED Conference, Glasgow, UK (Aug. 2019) ``Identifying spatial dynamics of infectious disease spread via machine learning classifiers''
+
+\item Invited talk at  the International Conference on Econometrics and Statistics (EcoSta), Taichung, Taiwan (June 2019)  ``Parameterization via emulation: Spatial models of infectious disease transmission''
+
+\item Invited talk at the Canadian Student Statistical Conference, University of Calgary, Calgary, Canada (May 2019) ``The O'Brien Institute for Public Health (OIPH) \&  The University of Calgary Biostatistics Centre (UCBC)''
+
+\item Invited  talk at the Statistical Society of Canada Annual Meeting, University of Calgary, Calgary, Canada (May 2019) ``NSERC Discovery Grant Workshop''  (co-presented with Michelle Payne, NSERC Program Officer)
+
+\item Invited discussant for the ``Rocky Mountain and Atlantic Collaborations in the Health Sciences'' session at the Statistical Society of Canada Annual Meeting, University of Calgary, Calgary, Canada (May 2019)
+
+\item Invited talk at the Department of Biostatistics, University of Iowa, Iowa City, USA (December 2018) ``Parameterization via emulation: spatial models of infectious disease transmission''
+
+
+\item Invited talk at BIRS workshop on Mathematical and Statistical Challenges in Bridging Model Development, Parameter Identification and Model Selection in the Biological Sciences, Banff, Canada (November 2018)
+``Emulation-based methods for parameterizing spatial infectious disease models''
+
+\item Invited electronic poster at the Joint Statistical Meetings, Vancouver, Canada (July 2018) ``Deep learning for infectious disease systems."
+
+
+
+
+\item Invited talk at the International Environmentrics Society Meeting, Guanaujuato, Mexico (July 2018) ``Spatial infectious disease models incorporating aggregate-level spatial structure."
+
+\item Plenary talk at the Medical Physics \& Data Analytics Workshop, University of British Columbia-Okanogan, Canada (July 2018) ``Bayesian optimal design for nonlinear systems: case studies from infectious disease epidemiology."
+
+ \item Invited talk at the Western North American Region of The International Biometric Society (WNAR-IBS) /Institute of Mathematical Statistics (IMS) Joint Conference, University of Alberta, Edmonton, Canada (June 2018) ``Approximating the spatio-temporal dynamics of infectious disease via emulation"
+
+\item Short course at the Western North American Region of The International Biometric Society (WNAR-IBS) /Institute of Mathematical Statistics (IMS) Joint Conference, University of Alberta, Edmonton, Canada (June 2018) ``Individual-level Transmission Process Modelling: Epidemics, Invasive Species and Beyond."
+
+\item Invited talk at the Workshop for Causal Adjustment in the Presence of Spatial Dependence, Centre de Recherches Math\'{e}matiques, Montr\'{e}al, Canada (June 2018) ``Spatial models of infectious disease transmission: data and computation."
+
+\item Invited talk at the  University of Calgary Veterinary Medicine Research Festival, Calgary, Canada (May 2018) ``R Software for individual-level transmission modelling.''
+
+\item Invited talk at MacDATA Institute, McMaster University (Nov. 2017) ``Approximating the spatio-temporal dynamics of infectious disease via emulation.''
+
+\item Invited talk at GEOMED Conference, Porto, Portugal (Sept. 2017) ``Individual-level infectious disease models incorporating aggregate level spatial structure''
+
+\item Invited talk at the Joint Statistical Meetings, Baltimore, USA (Aug. 2017) ``Individual-level infectious disease models incorporating aggregate level spatial structure''
+
+\item Two-day post-conference workshop at the Canadian Veterinary Epidemiological and Preventive Medicine (CAVEPM) Conference  (June 2017), University of Calgary, Calgary, Canada ``Bayesian Infectious disease modeling''
+
+\item Keynote talk at the Calgary Applied and Industrial Mathematical Sciences Conference, Calgary, Canada (May 2017) ``An introduction to Bayesian individual-level infectious disease modelling''
+
+\item Plenary talk at the Alberta Mathematics Dialogue Conference, MacEwen University, Edmonton, Canada (April 2017) ``An introduction to individual-level infectious disease modelling within a Bayesian statistical framework''
+
+\item Invited talk at the Department of Epidemiology, Biostatistics  \& Occupational Health, McGill University,  Montr\'{e}al, Canada (Jan. 2017) ``Inferring  the  spatial  dynamics  of  infectious  disease   via Gaussian process emulation''
+
+
+
+\item Invited talk at BIRS Workshop on Mathematical Biology for Understanding Emerging Infectious Diseases at the Human-Animal-Environment Interface: a One Health Approach, Banff, Canada (Nov 2016) ``Real Time Modelling of Epidemics (A Statistician's Perspective)''
+
+\item Invited talk at  Joint Statistical Meetings, Chicago, USA (July 2016) ``Gaussian process emulation for spatial infectious disease models''
+
+\item Invited talk at International Workshop on Applied Probability (IWAP), Toronto, Canada (June 2016) ``Approximate Bayesian computation for epidemic models with uncertain underlying contact networks''
+
+\item  Invited talk at the Statistical Society of Canada Annual Meeting, Brock University, St. Catherines, Canada (May 2016) ``Infectious disease modelling in the presence of underlying contact network uncertainty''
+
+\item  Invited talk at the Pacific Institute of Mathematical Sciences (PIMS), Calgary, Canada (May 2016) `` Bayesian study design for non-linear systems: a disease transmission experiment case study''
+
+\item  Invited talk at  National University of Singapore, Singapore  (April 2016) ``Emulator-based inference for models of large-scale infectious disease systems.''
+
+\item  Invited talk at   School of Public Health, University of Hong Kong, Hong Kong (March 2016) ``Optimal experimental and study design for infectious disease systems of animals.''
+
+\item  Invited talk at Simon Fraser University, Canada  (Feb. 2016) ``Approximate Bayesian inference for large-scale epidemic models.''
+
+\item Invited talk at Annual Conference on Neural Information Processing Systems (NIPS), Montr\'{e}al, Canada (Dec. 2015) ``ABC-based inference for epidemic models with uncertain underlying contact networks.''
+
+\item Invited talk at GEOMED Conference, University of Florence, Italy (Sept. 2015) ``Approximate inference for spatial epidemic models.''
+
+\item Invited talk at Bioinformatics Symposium, University of Calgary, Canada (May 2015) ``Computational statistics, disease modelling and design.''
+
+\item Invited talk at Descriptive and Predictive Methods in the Study of Communicable Diseases: Biomathematics \& Biostatistics Workshop,
+University of Guelph/Fields Institute, Guelph, Canada (May 2015) ``Emulator based inference for models of large-scale infectious disease systems.''
+
+\item Invited talk at Evidence-based Decision Support for Food Security Workshop, University of Warwick, Coventry, UK (April 2015) ``Emulator based inference for models of large-scale infectious disease systems.'' 
+
+\item Invited talk at Harvard School of Public Health, Boston, USA (March 2015) ``Bayesian optimal design methods for infectious disease transmission studies.''
+
+\item  Invited talk at University of Calgary (Community Health Sciences), Canada (Feb. 2015)
+``A Bayesian approach to infectious disease transmission modelling -- dealing with uncertainty.''
+
+\item  Invited talk at University of Victoria, Victoria, Canada  (Jan. 2015) ``Sampling-based approximate inference for large-scale infectious disease transmission models.''
+
+\item  Invited talk at OMAFRA Emergency Management Expo, Guelph, Canada (Dec. 2014) ``Using experimental design to better understand infectious disease spread in the livestock industries.''
+
+\item  Invited talk at University of Calgary (SAGE/Biostatistics, Mathematics \& Statistics), Canada (Nov 2014) ``The ABCs of infectious disease modelling.''
+
+\item  Invited talk at 36th Annual Meeting of Alberta Statisticians, Edmonton, Canada (Oct 2014) ``Bayesian optimal design of disease transmission experiments (and other issues in disease modelling).''
+
+\item  Invited talk at Statistical Society of Canada Annual Meeting, Toronto, Canada (May 2014) ``Optimal experimental design for infectious disease systems of animals.''
+
+\item  Invited talk at Simulation Models of Infectious Diseases (SIMID) Workshop, Hasselt, Belgium (April 2014) ``Optimal experimental design for infectious disease systems of animals.''
+
+\item  Invited talk at University of Calgary, Canada (April 2014) ``Optimal experimental design for infectious disease systems of animals.''
+
+\item  Invited talk at University of Prince Edward Island, Canada (Dec 2013) ``Data uncertainty in herd-level infectious disease transmission modelling."
+
+\item Invited talk at the  Statistical Science in Society Conference,   University of Waterloo,  Canada (August 2013) ``Approximate methods of parameter estimation for spatial epidemic models.''
+
+\item Invited talk at the International Environmentrics Society Meeting, Anchorage, Alaska, USA (June 2013) ``Parameterizing individual-level models of infectious disease spread using sampling-based likelihood approximations.''
+
+\item Invited talk at University of Windsor, Canada (Oct 2012) ``Efficient forms of individual-level models for large-scale spatial infectious disease.''
+
+\item Invited talk at Statistical Society of Canada Annual Meeting, Guelph, Canada (June 2012) ``Efficient forms of individual-level models for large-scale spatial infectious disease.''
+
+\item Invited talk at Fields Institute (IDEA Seminar), Toronto, Canada (April 2012) ``A Bayesian approach to dealing with uncertainty in infectious disease modelling.''
+
+\item Invited talk at McMaster University, Canada (Feb 2012) ``Efficient forms of individual-level models for large-scale spatial infectious disease.''
+
+\item  Invited talk at University of Manitoba (Jan 2012) ``Computationally efficient forms of spatial infectious disease models for large populations."
+
+\item Invited talk at University of Warwick, UK (Nov 2011) ``Latent conditional individual level models for infectious disease modelling.''
+
+\item Invited talk at University of Toronto, Canada (Oct 2011) ``Efficient forms of individual-level models for large-scale spatial infectious disease.''
+
+\item Invited talk at OMAFRA Emergency Management Expo, Guelph, Canada (Sept 2011) ``A statistical approach to modelling infectious diseases.''
+
+\item Invited talk at University of Saskatoon, Canada (Aug 2011) `` Individual-level models of infectious disease."
+
+\item Invited talk at BIRS Workshop on Front propagation in heterogeneous media: mathematical, numerical, and statistical issues in modelling a forest fire front, Banff, Canada (Oct 2010) ``Modelling the spatio-temporal dynamics of fire spread.''
+
+\item Invited talk at NICDS workshop, University of Montr\'{e}al, Canada (March 2010) ``Finite mixtures of infectious disease models.''
+
+\item Invited talks at University of McGill, Canada (Dec 2009) ``Likelihood-free inference for epidemic models''  \& ``Individual-level modelling of infectious diseases.''
+
+\item Invited talk at Statistical Society of Canada conference, Vancouver, Canada (June 2009) ``Likelihood-free inference for epidemic models.''
+
+\item Invited talk at University of Toronto, Canada (Jan 2009) ``Likelihood-free inference for epidemic models.''
+
+\item Invited talk at the Department of Mathematics \& Statistics, York University, Canada (Sept 2007) ?Modelling the spatio- temporal dynamics of infectious diseases: the UK 2001 foot-and-mouth epidemic?
+
+\item Invited talk at University of Waterloo, Canada (Sept 2007) ``Modelling the spatio-temporal dynamics of the UK 2001 foot-and-mouth epidemic.''
+
+\item Invited talk at Public Health Agency of Canada, Guelph, Canada (May 2007) ``The statistical modelling of infectious diseases in time and space.''
+
+\item Invited talk at the SSC Southern Ontario New Investigator Workshop, University of Waterloo, Canada (February 2007) ``The statistical modelling of infectious diseases in time and space.;;
+
+\item Invited talk at the Department of Population Medicine, Ontario Veterinary College, University of Guelph, Canada (November 2006) ``Modelling infectious diseases over time and space''
+
+\item Invited talk at the European Meeting of Statisticians, Torun, Poland (July 2006) ``Modelling the UK 2001 foot-and-mouth epidemic''.
+
+\item Invited talk at the Health Protection Agency, London, UK (July 2005) ``Modelling the UK 2001 Foot-and-Mouth Epidemic: A Bayesian MCMC Approach''
+ 
+\item Invited talk at Lund University, Sweden (March 2005) ``The UK 2001 Foot-and-mouth Disease Epidemic (A Case Study in Individual Level Spatial Epidemiology).''
+
+\item Invited talk at  Imperial College London, UK (June 2004) ``Modelling the UK 2001 Foot-and-Mouth Epidemic: A Bayesian MCMC Approach''
+ 
+\item Invited talk at the MRC-Biostatistics Unit, University of Cambridge, UK (March 2004) ``The UK 2001 Foot-and-mouth Disease Epidemic (A Case Study in Individual Level Spatial Epidemiology)''
+ 
+\item Invited talk at the Royal Statistical Society, London, UK (May 2003) ``Using Bayesian MCMC to model the spatio-temporal dynamics of foot-and-mouth disease.''
+
+\item Invited talk at the Department of Mathematics \& Statistics, Queen Mary, University of London (May 2000) ``The use of an airborne plant disease dispersal simulation in designing agricultural experiments which minimise representation bias''
+
+
+
+
+
+
+
+\end {etaremune}
+
+
+
+
+
+
+\item     Le, Poljak, {\bf Deardon}, Friendship \& Dewey ``Investigation of within-herd dynamics of infection with porcine reproductive and respiratory syndrome virus (PRRSV) and its control'' submitted to  {\it Preventive Veterinary Medicine} (June 2012).
+
+\item  {\bf{\em Fang}} \& {\bf Deardon} ``Computational gains via a discretization of the parameter space in individual-level models of infectious disease'' submitted to  {\it Statistical Communications in Infectious Diseases} (January 2012; in revision).
+
+\item  {\bf{\em Gold}}, {\bf Deardon} \& Feng ``Infection time uncertainty in individual-level models of infectious disease'' submitted to  {\it Statistical Communications in Infectious Diseases} (January 2012; in revision).
