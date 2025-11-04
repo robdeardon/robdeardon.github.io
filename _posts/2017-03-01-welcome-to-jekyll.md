@@ -1,6 +1,5 @@
 ---
 title: "About Me"
-# layout: post
 layout: page
 ---
 
