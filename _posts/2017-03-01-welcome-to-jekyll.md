@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 layout: page
+published: false
 ---
 
 I am a Professor of Biostatistics with a joint appointment in the Faculty of Veterinary Medicine and the Department of Mathematics & Statistics at the University of Calgary. Much of my recent work has focused on infectious disease modelling, though my interests also span Bayesian and computational statistics, experimental design, disease surveillance methods, spatio-temporal modelling, statistical learning, and statistical modelling more broadly.
